@@ -1,52 +1,458 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="style.css">
     <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
-    
-<body class="bg-purple-900 w-full grid place-content-center h-screen">
-   <!-- <h1 class=" text-yellow-500 text-4xl m-6">TEST</h1> -->
-   <div class=""></div>
-    <div class="p-6 max-w-sm mx-auto bg-white rounded-xl shadow-lg flex items-center space x-4">
-        <div>
-            <img class="h-12 w-12" src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/Physics_wallah_logo.jpg/600px-Physics_wallah_logo.jpg" alt="">
-        </div>
-        <div>
-            <div class="text-2xl font-medium">
-                heuristic
-                <p class="text-slate-700 text-base"> By someone</p>
+
+<body>
+
+    <div class="w-[90%] mx-auto">
+
+        <nav class="w-full px-3 md:px-6 mt-7 flex items-center justify-between ">
+            <div>
+                <img src="https://themewagon.github.io/symposium-nextjs/images/logo/logo.svg" alt="Logo">
+            </div>
+
+            <ul class="hidden md:flex gap-8">
+                <li class="cursor-pointer hover:text-[#4481F3]">Homepage</li>
+                <li class="cursor-pointer hover:text-[#4481F3]">Schedules</li>
+                <li class="cursor-pointer hover:text-[#4481F3]">Speakers</li>
+                <li class="cursor-pointer hover:text-[#4481F3]">Blog</li>
+                <li class="cursor-pointer hover:text-[#4481F3]">Contact</li>
+                <li class="cursor-pointer hover:text-[#4481F3]">Documentation</li>
+            </ul>
+
+            <div class="hidden md:flex gap-4">
+                <button
+                    class="py-2 px-5 rounded-xl font-semibold border border-[#4481F3] bg-white hover:bg-[#4481F3] text-[#4481F3] hover:text-white">Sign
+                    in</button>
+                <button
+                    class="py-2 px-5 rounded-xl font-semibold border border-[#4481F3] bg-[#4481F3] hover:bg-white text-white hover:text-[#4481F3]">Sign
+                    up</button>
+            </div>
+
+            <div class="md:hidden text-4xl cursor-pointer">
+                <a href="#">&#8801;</a>
+            </div>
+        </nav>
+
+        <section class="w-full flex flex-col md:flex-row items-center justify-between pt-10 px-5 md:px-10 gap-10">
+            <div class="w-full lg:w-1/2 text-center lg:text-left">
+                <h3 class="text-[#4481F3] font-semibold text-lg md:text-xl">Starts on 16 June 2024</h3>
+                <h1 class="text-4xl md:text-6xl font-semibold py-4 text-[#102D47] leading-tight">User Experience
+                    Conference</h1>
+                <p class="text-[#5E7D99] py-5 text-lg md:text-xl max-w-lg mx-auto lg:mx-0l">We offer you a new
+                    generation of task and project <br>
+                    management system. Plan, manage and track.</p>
+
+                <div class="flex flex-col md:flex-row gap-4 pt-6 justify-center lg:justify-start">
+                    <button class="py-4 px-8 rounded-xl font-semibold border border-[#4481F3] bg-[#4481F3] 
+                    hover:bg-white text-white hover:text-[#4481F3] transition">Buy access pass
+                    </button>
+
+                    <button class="py-4 px-8 rounded-xl font-semibold border border-[#4481F3]
+                     bg-white hover:bg-[#4481F3] text-[#4481F3] hover:text-white transition"> <i
+                            class="fa-regular fa-calendar"></i> <span>Add to calendar</span>
+                    </button>
+                </div>
+            </div>
+
+            <div class="w-1/2 flex gap-10 justify-center hidden md:flex">
+                <!-- John -->
+                <div class="relative">
+                    <div
+                        class="relative w-[320px] h-[420px] bg-[#46C4FF] rounded-[160px] flex items-end justify-center">
+                        <img src="https://themewagon.github.io/symposium-nextjs/images/hero/john.png"
+                            class="w-[260px]" />
+                    </div>
+                    <div class="absolute top-6 -left-6 bg-yellow-400 px-5 py-3 rounded-xl font-semibold text-sm">
+                        John Karter<br><span class="text-xs">4.8 rating</span>
+                    </div>
+                </div>
+
+                <!-- Maria -->
+                <div class="relative mt-16">
+                    <div
+                        class="relative w-[320px] h-[420px] bg-[#4481F3] rounded-[160px] flex items-end justify-center">
+                        <img src="https://themewagon.github.io/symposium-nextjs/images/hero/maria.png"
+                            class="w-[260px]" />
+                    </div>
+                    <div class="absolute top-10 -right-6 bg-green-300 px-5 py-3 rounded-xl font-semibold text-sm">
+                        Mariya John<br><span class="text-xs">4.9 rating</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="bg-[#E0F7FF] py-20 my-20">
+            <div class=" mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div>
+                    <img class="w-full rounded-xl"
+                        src="https://themewagon.github.io/symposium-nextjs/images/ThumbnailSlider/Slider_1.png" alt="">
+                </div>
+                <div>
+                    <h3 class="text-5xl font-semibold text-[#1B3750]">Best Online and Offline Conferences</h3>
+                    <p class="text-gray-500 font-semibold my-10">Sometimes by accident, sometimes chunks as necessary
+                        making this the first true generator on the Internet.
+                        recently with desktop publishing software like Aldus PageMaker</p>
+                    <button
+                        class="text-[#4481F3] border border-[#4481F3] font-semibold rounded mt-4 px-6 py-3 hover:bg-[#4481F3] hover:text-white">Upcoming
+                        conferences</button>
+                </div>
+            </div>
+        </section>
+
+        <div class="w-full h-auto rounded-xl">
+            <div class="my-10">
+                <h3 class="text-center text-4xl font-bold text-[#1B3750]">World Class Speakers</h3>
+            </div>
+            <div class="grid gap-8 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5">
+
+                <div class="rounded-xl overflow-hidden">
+                    <img src="https://themewagon.github.io/symposium-nextjs/images/world-class-speakers/speakers_1.png"
+                        class="w-full h-52 object-cover">
+                    <div class="pt-5">
+                        <p class="text-2xl font-semibold text-[#1B3750]">Darrell Steward</p>
+                        <h3 class="text-lg leading-snug text-gray-500">Designation</h3>
+                    </div>
+                </div>
+
+                <div class="rounded-xl overflow-hidden md:mt-20">
+                    <img src="https://themewagon.github.io/symposium-nextjs/images/world-class-speakers/speakers_2.png"
+                        class="w-full h-52 object-cover">
+                    <div class="pt-5">
+                        <p class="text-2xl font-semibold text-[#1B3750]">Darrell Steward</p>
+                        <h3 class="text-lg leading-snug text-gray-500">Designation</h3>
+                    </div>
+                </div>
+
+                <div class="rounded-xl overflow-hidden">
+                    <img src="https://themewagon.github.io/symposium-nextjs/images/world-class-speakers/speakers_3.png"
+                        class="w-full h-52 object-cover">
+                    <div class="pt-5">
+                        <p class="text-2xl font-semibold text-[#1B3750]">Darrell Steward</p>
+                        <h3 class="text-lg leading-snug text-gray-500">Designation</h3>
+                    </div>
+                </div>
+
+                <div class="rounded-xl overflow-hidden md:mt-20">
+                    <img src="https://themewagon.github.io/symposium-nextjs/images/world-class-speakers/speakers_4.png"
+                        class="w-full h-52 object-cover">
+                    <div class="pt-5">
+                        <p class="text-2xl font-semibold text-[#1B3750]">Darrell Steward</p>
+                        <h3 class="text-lg leading-snug text-gray-500">Designation</h3>
+                    </div>
+                </div>
+
+                <div class="rounded-xl overflow-hidden">
+                    <img src="https://themewagon.github.io/symposium-nextjs/images/world-class-speakers/speakers_5.png"
+                        class="w-full h-52 object-cover">
+                    <div class="pt-5">
+                        <p class="text-2xl font-semibold text-[#1B3750]">Darrell Steward</p>
+                        <h3 class="text-lg leading-snug text-gray-500">Designation</h3>
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
-   </div>
 
-   <button class="bg-yellow-400 mt-4 rounded-xl text-white text-base p-1 hover:bg-white hover:text-black">Buy now</button>
-   
-   <div class="text-center my-4">
-    <p class="text-white md:text-green-500 sm:text-yellow-500">Lorem, ipsum dolor.</p>
-   </div>
+        <div class="text-center">
+            <h3 class="mt-20 font-bold text-4xl text-[#1B3750]">The Biggest Digital Event in 2024</h3>
+            <p class="text-gray-500 my-10  text-lg">Sometimes by accident, sometimes chunks as necessary making this the
+                first
+                true generator on the Internet. <br> recently with desktop publishing software
+                like Aldus PageMaker including versions of Lorem Ipsum was <br> popularised in the 1960s with the
+                release of Letraset sheets containing Lorem Ipsum passages.</p>
+            <div class="flex flex-col md:flex-row">
+                <div class="flex-1 w-full lg:w-1/2 rounded-xl bg-[#2F73F2]  flex items-center justify-center p-10 ">
+                    <img class="mx-auto py-20"
+                        src="https://themewagon.github.io/symposium-nextjs/images/event-ticket/ticket.png" alt="">
+                </div>
 
+                <div class=" flex-1 w-full lg:w-1/2 rounded-xl bg-[#46C4FF] flex items-center justify-center p-10">
+                    <div class="bg-white rounded-xl p-6 md:p-8 w-full max-w-md shadow-lg">
+                        <h3 class="font-semibold text-2 md:text-3xl text-[#102C46] mb-6 text-left">Ticket Prices</h3>
+                        <p class="flex justify-between my-2"><span class="text-[#102C46] font-bold">$100</span> <span
+                                class="text-[#102C46] font-semibold">Early Birds</span>
+                            <span class="text-gray-500">Until May 20, 2022</span>
+                        </p>
+                        <p class="flex justify-between my-2"><span class="text-[#102C46] font-bold">$150</span> <span
+                                class="text-[#102C46] font-semibold">Late Birds</span>
+                            <span class="text-gray-500">After May 20, 2022</span>
+                        </p>
 
-   <div class="mt 3">
-<div class="max-w-sm mx-auto bg-white rounded-xl overflow-hidden md:max-w-1xl">
-    <div class="md:flex">
-        <div><img class="h-48 w-full md:h-full w-48" src="https://images.pexels.com/photos/34205375/pexels-photo-34205375.jpeg" alt=""></div>
-        <div class="p-8 flex flex-col">
-            <div class="uppercase tracking-wide text-sm text-indigo-500 font-semibold">An interesting content</div>
-            <a class="block mt-1 text-sm font-md text-blue-400 hover:text-black "    href="#">Tailwind css is best <span class="bg-orange-400 p[2px] px-[10px]">unique</span> for develop some unique material</a>
-        <p class="mt-2 text-slate-700">Lorem, ipsum dolor.
-        </p>
+                        <button
+                            class="bg-[#4481F3] text-white hover:bg-white hover:text-[#4481F3] border border-[#4481F3] font-semibold rounded w-full py-3 my-3">Book
+                            Ticket</button>
+
+                    </div>
+                </div>
+            </div>
         </div>
-        
-    </div>
-</div>
 
-   </div>
+        <div class=" w-full bg-[#EFFBFF] py-16 md:py-20 my-10">
+            <div class="max-w-7xl mx-auto px-6 flex flex-col lg:flex-row items-center gap-12 ">
+                <div class="w-full lg:w-1/2 text-center lg:text-left mx-10">
+                    <h3 class="text-[#15314B] font-semibold text-4xl md:text-5xl leading-tight">Previous Year
+                        Highlights</h3>
+                    <p class="font-semibold text-base md:text-lg text-gray-500 my-6 md:my-8 ">Many variations of
+                        passages
+                        of Lorem
+                        Ipsum <br> available but the majority have suffered <br>
+                        alteration in some form injected humour, or <br>
+                        randomised words</p>
+
+                    <div class="flex flex-wrap justify-center lg:justify-start gap-6 md:gap-10">
+                        <div>
+                            <h3 class="text-[#2F73F2] font-bold text-3xl md:text-4xl">10k+</h3>
+                            <p class="text-[#2A445B] text-sm md:text:base font-semibold">Ticket Confirmed</p>
+                        </div>
+                        <div>
+                            <h3 class="text-[#2F73F2] font-bold text-3xl md:text-4xl">16</h3>
+                            <p class="text-[#2A445B] text-sm md:text:base font-semibold">Partners</p>
+                        </div>
+                        <div>
+                            <h3 class="text-[#2F73F2] font-bold text-3xl md:text-4xl">150k+</h3>
+                            <p class="text-[#2A445B] text-sm md:text:base font-semibold">Participants</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="w-full lg:w-1/2">
+                    <img class="w-full h-auto rounded-2xl shadow-lg"
+                        src="https://themewagon.github.io/symposium-nextjs/images/highlight/slide-1.png" alt="">
+                </div>
+
+            </div>
+        </div>
+
+        <div>
+            <h3 class="text-4xl font-bold text-[#102D47] text-center">Upcoming Conference</h3>
+        </div>
+
+        <div class="flex items-center gap-4 justify-center my-10">
+            <button
+                class="w-8 h-8 rounded-full border flex items-center justify-center bg-[#EFFBFF] hover:bg-[#2F73F2]">‹</button>
+
+            <div class="flex gap-4">
+
+                <div
+                    class="w-28 h-28 bg-[#EFFBFF] rounded-xl flex flex-col justify-center items-center text-gray-400 hover:text-white hover:bg-[#2F73F2]">
+                    <h2 class="text-3xl font-semibold ">24</h2>
+                    <p class="text-xs mt-1">Dec 2024</p>
+                </div>
+
+                <div
+                    class="w-28 h-28 bg-[#EFFBFF] rounded-xl flex flex-col justify-center items-center text-gray-400 hover:text-white hover:bg-[#2F73F2]">
+                    <h2 class="text-3xl font-semibold ">20</h2>
+                    <p class="text-xs mt-1">Jan 2021</p>
+                </div>
+
+                <div
+                    class="w-28 h-28 bg-[#EFFBFF] rounded-xl flex flex-col items-center justify-center text-gray-400 hover:text-white hover:bg-[#2F73F2]">
+                    <h2 class="text-3xl font-semibold">25</h2>
+                    <p class="text-xs mt-1">Feb 2022</p>
+                </div>
+
+                <div
+                    class="w-28 h-28 bg-[#EFFBFF] rounded-xl flex flex-col items-center justify-center text-gray-400 hover:text-white hover:bg-[#2F73F2]">
+                    <h2 class="text-3xl font-semibold">25</h2>
+                    <p class="text-xs mt-1">Mar 2023</p>
+                </div>
+
+                <div
+                    class="w-28 h-28 bg-[#EFFBFF] rounded-xl flex flex-col items-center justify-center text-gray-400 hover:text-white hover:bg-[#2F73F2]">
+                    <h2 class="text-3xl font-semibold">25</h2>
+                    <p class="text-xs mt-1">April 2024</p>
+                </div>
+
+                <div
+                    class="w-28 h-28 bg-[#EFFBFF] rounded-xl flex flex-col items-center justify-center text-gray-400 hover:text-white hover:bg-[#2F73F2]">
+                    <h2 class="text-3xl font-semibold">25</h2>
+                    <p class="text-xs mt-1">May 2025</p>
+                </div>
+
+                <div
+                    class="w-28 h-28 bg-[#EFFBFF] rounded-xl flex flex-col items-center justify-center text-gray-400 hover:text-white hover:bg-[#2F73F2]">
+                    <h2 class="text-3xl font-semibold">25</h2>
+                    <p class="text-xs mt-1">June 2026</p>
+                </div>
+            </div>
+
+            <button
+                class="w-8 h-8 rounded-full border flex items-center justify-center bg-[#EFFBFF] hover:bg-[#2F73F2]">›</button>
+        </div>
+
+        <div
+            class="border bg-white max-w-7xl rounded-2xl border px-8 py-6 flex flex-col md:flex-row items-start gap-y-6  justify-between">
+            <h3 class="text-3xl font-semibold text-[#102C46]">The Conference <br> Construct Millennial</h3>
+            <div class=" flex items-center gap-4">
+                <div class="flex -space-x-3">
+                    <img class="w-16 h-16 rounded-full overflow-hidden"
+                        src="https://themewagon.github.io/symposium-nextjs/images/upcoming/profile-1.png" alt="">
+                    <img class="w-16 h-16 rounded-full overflow-hidden"
+                        src="https://themewagon.github.io/symposium-nextjs/images/upcoming/profile-3.png" alt="">
+                </div>
+
+                <div>
+                    <p class="text-gray-400 font-semibold">Speech by </p>
+                    <h3 class="text-[#1F3951] font-semibold">Reena John & Lorance</h3>
+                </div>
+            </div>
+
+            <button
+                class="px-9 py-3 text-[#2F73F2] border border-[#2F73F2] rounded-xl hover:text-white hover:bg-[#2F73F2]">Book
+                Ticket</button>
+        </div>
+
+        <div>
+            <div
+                class="border bg-white max-w-7xl rounded-2xl border px-8 py-6 flex flex-col md:flex-row  items-start gap-y-6 justify-between">
+                <h3 class="text-3xl font-semibold text-[#102C46]">Local Business Global <br>Event</h3>
+                <div class=" flex items-center gap-4">
+                    <div class="flex">
+                        <img class="w-16 h-16 rounded-full overflow-hidden"
+                            src="https://themewagon.github.io/symposium-nextjs/images/upcoming/profile-2.png" alt="">
+                    </div>
+
+                    <div>
+                        <p class="text-gray-400 font-semibold">Speech by </p>
+                        <h3 class="text-[#1F3951] font-semibold">Marthin Luthar</h3>
+                    </div>
+                </div>
+
+                <button
+                    class="px-9 py-3 text-[#2F73F2] border border-[#2F73F2] rounded-xl hover:text-white hover:bg-[#2F73F2]">Book
+                    Ticket</button>
+            </div>
+        </div>
+
+
+
+        <div
+            class="bg-[#EFFBFF] py-12 my-10 flex flex-col md:flex-row items-start md:items-center gap-10 px-6 md:px-20">
+            <div
+                class="hidden md:flex w-full md:w-1/2 h-[400px] md:h-auto bg-[#46C4FF] rounded-tl-[160px] rounded-bl-[100px] flex items-end justify-center overflow-hidden">
+                <img class="h-[90%] md:h-auto object-contain"
+                    src="https://themewagon.github.io/symposium-nextjs/images/hero/john.png">
+            </div>
+
+            <div class="w-full md:w-1/2 text-left">
+                <h3 class="text-3xl md:text-4xl text-[#102D47] font-bold">What Our <br> Attendees Say</h3>
+                <p class="my-5 text-gray-500 text-sm md:text-base max-w-lg">Lorem, ipsum dolor sit amet
+                    consectetur
+                    adipisicing
+                    elit. Velit
+                    cum
+                    esse
+                    libero aliquam, iure harum,
+                    commodi quaerat
+                    recusandae doloremque, ullam magnam reprehenderit eligendi deserunt soluta nostrum ab nisi ad
+                    sint?
+                </p>
+
+                <div class="flex items-center justify-start gap-5">
+                    <img class="w-16 h-16 rounded-full overflow-hidden"
+                        src="https://themewagon.github.io/symposium-nextjs/images/testimonials/testimonials-profile.png"
+                        alt="">
+                    <div class="text-left">
+                        <p class="gap-5 font-semibold text-[#15304A]">Jordhan Daniyel</p>
+                        <p>⭐⭐⭐⭐</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div
+            class="w-max-5xl mx-auto min-h-[16rem] rounded-xl bg-[#2F73F2] flex flex-col md:flex-row items-center justify-center md:justify-start p-6 md:p-0 overflow-hidden">
+            <img class="h-72 hidden md:block object-contain"
+                src="https://themewagon.github.io/symposium-nextjs/images/ticket-section/ticket.png" alt="">
+            <div class="text-center md:text-left md:ml-10">
+                <p class="text-white font-semibold text-3xl mb-6">Become a Part of <br> the Digital Evolution!
+                </p>
+                <button
+                    class="text-white bg-[#46C4FF] border border-[#46C4FF] px-12 py-3 rounded mx-10 -mt-5 hover:bg-[#2F73F2] transition-all">Book
+                    Ticket</button>
+            </div>
+        </div>
+
+        <footer class="bg-[#102C46] w-full px-6 py-12 mt-10">
+            <div class="max-w-7xl mx-auto flex flex-col gap-10">
+
+                <div
+                    class="flex flex-col md:flex-row items-center justify-between gap-8 pb-10 border-b border-gray-800">
+                    <img src="https://themewagon.github.io/symposium-nextjs/images/footer/footer-logo-white.svg"
+                        alt="Logo" class="w-44">
+
+                    <ul class="flex flex-wrap justify-center gap-x-8 gap-y-3">
+                        <li class="cursor-pointer text-gray-300 hover:text-[#2F73F2] text-sm font-medium">Home</li>
+                        <li class="cursor-pointer text-gray-300 hover:text-[#2F73F2] text-sm font-medium">Speakers</li>
+                        <li class="cursor-pointer text-gray-300 hover:text-[#2F73F2] text-sm font-medium">Schedule</li>
+                        <li class="cursor-pointer text-gray-300 hover:text-[#2F73F2] text-sm font-medium">About</li>
+                        <li class="cursor-pointer text-gray-300 hover:text-[#2F73F2] text-sm font-medium">Sponsors</li>
+                    </ul>
+
+                    <div class="flex gap-3">
+                        <a href="#"
+                            class="w-9 h-9 bg-white flex items-center justify-center rounded text-[#102C46] hover:bg-[#2F73F2] hover:text-white transition">
+                            <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24">
+                                <path
+                                    d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-2.2c0-.637.435-.813.819-.813h2.181v-3.987l-3-.013c-3.328 0-5 2.219-5 4.531v2.482z" />
+                            </svg>
+                        </a>
+                        <a href="#"
+                            class="w-9 h-9 bg-white flex items-center justify-center rounded text-[#102C46] hover:bg-[#2F73F2] hover:text-white transition">
+                            <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24">
+                                <path
+                                    d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z" />
+                            </svg>
+                        </a>
+                        <a href="#"
+                            class="w-9 h-9 bg-white flex items-center justify-center rounded text-[#102C46] hover:bg-[#2F73F2] hover:text-white transition">
+                            <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24">
+                                <path
+                                    d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="flex flex-col lg:flex-row items-center justify-between gap-10">
+                    <p class="text-gray-400 text-sm leading-7 text-center lg:text-left">
+                        © All rights reserved. Made by NextJs Templates <br class="hidden md:block">
+                        Distributed by ThemeWagon
+                    </p>
+
+                    <div class="flex flex-col sm:flex-row items-center gap-6 w-full lg:w-auto">
+                        <h3 class="text-gray-400 text-lg whitespace-nowrap">Subscribe Newsletter</h3>
+                        <div class="flex w-full sm:w-auto overflow-hidden rounded-lg">
+                            <input class="w-full sm:w-64 px-5 py-3 outline-none text-gray-800"
+                                placeholder="Email address*">
+                            <button class="bg-[#2F73F2] hover:bg-[#13439B] text-white px-8 py-3 font-bold transition">
+                                Subscribe
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+
+
+
+
+
+
+
 
 
 </body>
+
 </html>
